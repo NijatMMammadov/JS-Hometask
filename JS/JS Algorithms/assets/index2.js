@@ -5,8 +5,8 @@
 
 
 
-let arr = [58, 22, 37, 43, 59, 22]
-let sum = 0
+let arr = [58, 22, 37, 43, 59, 22];
+sum = 0
 
 const edediOrta = (a) => {
     for (let i = 0; i < arr.length; i++) {

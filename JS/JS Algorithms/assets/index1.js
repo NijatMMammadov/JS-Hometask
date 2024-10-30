@@ -24,6 +24,6 @@ const eded = (a) => {
         }
     }
 }
-// eded(array3)
 
+// eded(array3)
 

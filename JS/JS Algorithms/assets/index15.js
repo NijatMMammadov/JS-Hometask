@@ -7,13 +7,13 @@
 
 
 const home = (age, maash) => {
-    if(age>=25 && age<= 40 && maash>5000 ) {
+    if (age >= 25 && age <= 40 && maash > 5000) {
         console.log("Müraciət uyğundur");
-    }else if(age >40 && maash>70000 ){
+    } else if (age > 40 && maash > 70000) {
         console.log("Müraciət uyğundur");
-    }else if(age<25 && maash> 10000){
+    } else if (age < 25 && maash > 10000) {
         console.log("Müraciət uyğundur");
-    }else{
+    } else {
         console.log("müraciət rədd edilir");
     }
 }

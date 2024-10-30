@@ -7,14 +7,14 @@
 
 const grade = (q, b) => {
     if (q >= 85 && b > 3) {
-        q +=5
-        if (q>100) {
-            q=100
+        q += 5
+        if (q > 100) {
+            q = 100
         }
-    } else if (q>=70 && q<85 && b>=2) {
-        q+=3
-    }else if(q>=60 && q<70 && b>=1){
-        q+=2
+    } else if (q >= 70 && q < 85 && b >= 2) {
+        q += 3
+    } else if (q >= 60 && q < 70 && b >= 1) {
+        q += 2
     }
     console.log(q);
 }

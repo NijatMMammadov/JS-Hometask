@@ -5,7 +5,7 @@
 // : Əgər resept 5-dən az maddə istifadə edirsə, "Asan" olur. Yağlı maddə yoxdursa, "Sağlam" olur.
 
 
-const info = (a, b) => {
+const inform = (a, b) => {
     if (a > 10) {
         console.log("Çetin");
     } else if (a >= 5 && a <= 10) {
@@ -26,4 +26,4 @@ const info = (a, b) => {
 
 }
 
-// info(15, 1)
+// inform(15, 1)
