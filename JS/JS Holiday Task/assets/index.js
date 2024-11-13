@@ -1,17 +1,20 @@
 let myArray = [
     {
+        "id": 1,
         "image": "./assets/images/children_3.jpg.webp",
-        "Name": "Mark ,",
+        "surname": "Mark , ",
         "age": 12 + "years old",
     },
     {
+        "id": 2,
         "image": "./assets/images/children_4.jpg.webp",
-        "Name": "Andre ,",
+        "surname": "Andre ,",
         "age": 10 + "years old",
     },
     {
+        "id": 3,
         "image": "./assets/images/children_5.jpg.webp",
-        "Name": "Markau ,",
+        "surname": "Markau ,",
         "age": 11 + "years old",
     }
 ]
@@ -19,32 +22,61 @@ let myArray = [
 let navbar = document.querySelector(".navbar");
 let childrenBoxes = document.querySelector(".children-boxes");
 let box = document.querySelector(".box");
+let secform = document.querySelector("#form");
+let form = document.querySelector(".form");
+let surname = document.querySelector("#surname");
+let age = document.querySelector("#age");
+let image = document.querySelector("#image");
+let btnAdd = document.querySelector(".btn-add");
+let search = document.querySelector("#search");
+let btnList = document.querySelector(".btn-list");
 
 
-document.addEventListener("DOMContentLoaded", Show(myArray))
+//document.addEventListener("DOMContentLoaded", ShowmyArray(myArray))
+
+document.addEventListener("DOMContentLoaded", () => ShowmyArray(myArray));
 
 
-function Show() {
-    myArray.forEach(myArray => {
+
+function ShowmyArray() {
+    myArray.forEach((item) => {
         childrenBoxes.innerHTML += `
                     <div class="box">
                         <div class="box-image">
-                            <img src=${myArray.image} alt="">
+                            <img src=${item.image} alt="">
                         </div>
                         <div class="box-info">
-                            <p class="p-name">${myArray.Name} </p>
-                            <p class="p-age"> ${myArray.age}</p>
+                            <p class="p-name">${item.surname} </p>
+                            <p class="p-age"> ${item.age}</p>
                         </div>
                         <div class="button-dd">
                             <button class="btn-details">Details</button>
-                            <button class="btn-delete">Delete</button>
+                            <button class="btn-delete" data-id="${item.id}">Delete</button>
                         </div>
                     </div> `
     })
-
 }
 
-// Show(myArray)
+btnAdd.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (surname.value.trim() != "" && age.value.trim() != "" && image.value.trim() != "") {
+        let id = crypto.randomUUID();
+        let newArray = {
+            id: id,
+            image: image.value,
+            surname: surname.value,
+            age: age.value
+        };
+
+        myArray.push(newArray);
+        ShowmyArray(myArray); 
+        console.log(myArray);
+
+    } else {
+        alert("Empty");
+    }
+});
+
 
 //          ``
 
@@ -52,7 +84,6 @@ window.addEventListener("scroll", () => {
     let scrollPosition = window.scrollY
     let navbar = document.querySelector(".navbar");
     if (scrollPosition > 50) {
-        console.log("salam");
         navbar.style.backgroundColor = "rgb(188, 81,72)";
         navbar.style.color = "white";
     } else {
