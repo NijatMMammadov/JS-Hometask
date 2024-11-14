@@ -19,7 +19,6 @@ let myArray = [
     }
 ]
 
-let navbar = document.querySelector(".navbar");
 let childrenBoxes = document.querySelector(".children-boxes");
 let box = document.querySelector(".box");
 let secform = document.querySelector("#form");
@@ -57,7 +56,7 @@ function ShowmyArray() {
     })
 }
 
-btnAdd.addEventListener("submit", (event) => {
+form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (surname.value.trim() != "" && age.value.trim() != "" && image.value.trim() != "") {
         let id = crypto.randomUUID();
@@ -69,7 +68,7 @@ btnAdd.addEventListener("submit", (event) => {
         };
 
         myArray.push(newArray);
-        ShowmyArray(myArray); 
+        ShowmyArray(myArray);
         console.log(myArray);
 
     } else {
