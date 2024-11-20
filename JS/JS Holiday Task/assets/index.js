@@ -15,7 +15,7 @@ let myArray = [
         "id": 3,
         "image": "./assets/images/children_5.jpg.webp",
         "surname": "Markau ,",
-        "age": 11 + "years old",
+        "age": 11 + "years old-",
     }
 ]
 
@@ -49,8 +49,9 @@ function ShowmyArray() {
                             <p class="p-age"> ${item.age}</p>
                         </div>
                         <div class="button-dd">
-                            <button class="btn-details">Details</button>
+                            <button class="btn-details" data-id="${item.id}">Details</button>
                             <button class="btn-delete" data-id="${item.id}">Delete</button>
+                            <button class="btn-edit" data-id="${item.id}">Edit</button>
                         </div>
                     </div> `
     })
@@ -66,18 +67,16 @@ form.addEventListener("submit", (event) => {
             surname: surname.value,
             age: age.value
         };
-
         myArray.push(newArray);
         ShowmyArray(myArray);
         console.log(myArray);
-
     } else {
         alert("Empty");
     }
 });
 
 
-//          ``
+// ``
 
 window.addEventListener("scroll", () => {
     let scrollPosition = window.scrollY
