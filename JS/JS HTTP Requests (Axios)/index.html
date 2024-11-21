@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./JS/main.js" type="module"></script>
+    <title>Task</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>
+                CATEGORIES
+            </h1>
+            <div class="option">
+                <!-- <div class="categories">
+                    <span class="categori-list">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, quaerat.
+                        </p>
+                        <p>
+                            
+                        </p>
+                    </span>
+                    <button class="btn btn-details">Details</button>
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button> 
+                </div> -->
+            </div>
+            <button class="btn-modal">
+                Open Modal 
+            </button>
+        </div>
+        <div class="add-form">
+            <form id="add-form">
+                <input type="text" id="add-name">
+                <input type="text" id="add-description">
+                <button type="submit" class="btn btn-add">Add</button>
+            </form>
+        </div>
+
+        <div class="overlay d-none"></div>
+        <div class="edit-form d-none">
+            <form id="edit-form">
+                <h1>Edit Form</h1>
+                <input type="text" id="edit-name">
+                <input type="text" id="edit-description">
+                <button type="submit" class="btn btn-edit">Edit</button>
+                <button class="btn close">X</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

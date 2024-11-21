@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    margin: 10px auto;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 80%;
+    min-height: 40px;
+    border: 1px solid black;
+    gap: 30px;
+}
+
+.categori-list{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.span-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn-modal{
+    background-color: white;
+    color: rgb(131, 192, 248);
+    padding: 7px;
+    border: 1px solid rgb(131, 192, 248) ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-details{
+    background-color: rgb(54, 237, 243);
+}
+
+.btn-edit{
+    background-color: yellow;
+}
+
+.btn-delete{
+    background-color: red;
+}
+
+.btn-add{
+    font-size: 16px;
+    background-color: green;
+}
+
+.add-form>form{
+    margin: 50px auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#add-form{
+
+    input{
+        width: 40%;
+        height: 35px;
+        padding: 5px;
+    }
+}
+
+
+
+/*------Edit btn--------*/
+
+.edit-form>form{
+    margin: 50px auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    position: fixed;
+    top: 40%;
+    
+
+}
+
+#edit-form{
+    z-index: 2;
+    color: white;
+
+    input{
+        width: 90%;
+        min-height: 35px;
+        padding: 5px;
+    }
+}
+
+.close{
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    right: 110px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
