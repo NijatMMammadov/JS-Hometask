@@ -75,6 +75,7 @@
     background-color: green;
 }
 
+
 .add-form>form{
     margin: 50px auto;
     display: flex;
@@ -107,17 +108,19 @@
     gap: 10px;
     width: 80%;
     position: fixed;
-    top: 40%;
+    top: 20%;
     
 
 }
 
 #edit-form{
+    background-color: rgb(108, 199, 199);
     z-index: 2;
     color: white;
+    padding: 10px;
 
     input{
-        width: 90%;
+        width: 100%;
         min-height: 35px;
         padding: 5px;
     }
@@ -127,7 +130,7 @@
     background-color: red;
     position: absolute;
     top: 10px;
-    right: 110px;
+    right: 20px;
 }
 
 .overlay{

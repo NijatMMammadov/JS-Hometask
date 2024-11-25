@@ -1,10 +1,12 @@
-export async function GetAllSuppliers(url) {
+
+export async function GetAllDatas(url) {
     let data
     let error
 
     await axios.get(url)
         .then(res => data = res.data)
         .catch(err => error = err)
+
     return {
         data,
         error
@@ -12,24 +14,11 @@ export async function GetAllSuppliers(url) {
 
 }
 
-export async function PostSupplier(url, newsupp) {
+export async function GetDataById(url, id) {
     let data
     let error
 
-    await axios.post(url, newsupp)
-        .then(res => data = res.data)
-        .catch(err => error = err)
-    return {
-        data,
-        error
-    }
-}
-
-export async function GetSupplierById(url, id) {
-    let data
-    let error
-
-    await axios.get(`${url}/ ${id}`)
+    await axios.get(`${url}/${id}`)
         .then(res => data = res.data)
         .catch(err => error = err)
 
@@ -37,17 +26,37 @@ export async function GetSupplierById(url, id) {
         data,
         error
     }
+
 }
 
-export async function UpdateAllSupplier(url, id, updatedata) {
+export async function PostData(url, newpost) {
     let data
     let error
+
+    await axios.post(url, newpost)
+        .then(res => data = res.data)
+        .catch(err => error = err)
+
+    return {
+        data,
+        error
+    }
+
+}
+
+export async function GetUpdateData(url,id,updatedata) {
+    let data
+    let error
+
     await axios.put(`${url}/ ${id}`, updatedata)
         .then(res => data = res.data)
-        .catch(res => error = res.err)
+        .catch(err => error = err)
 
-    return {
+    return{
         data,
         error
     }
-}   
+}
+
+
+

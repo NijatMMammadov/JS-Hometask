@@ -47,7 +47,6 @@ function ShowSuppliers(data) {
             </div>
         `
 
-
         let btnsEdit = document.querySelectorAll(".btn-edit")
         btnsEdit.forEach(btnEdit => {
             btnEdit.addEventListener("click", () => {
@@ -55,7 +54,6 @@ function ShowSuppliers(data) {
                 EditSupplier(id)
             })
         })
-
     });
 }
 
@@ -77,7 +75,6 @@ addForm.addEventListener("submit", (e) => {
 
 
 function EditSupplier(id) {
-
     GetSupplierById(BaseURL, id)
         .then(res => {
 
@@ -95,7 +92,6 @@ function EditSupplier(id) {
                 }
                 console.log(updateingdata);
             })
-
         })
 
 }
@@ -104,8 +100,12 @@ close.addEventListener("click", (e) => {
     e.preventDefault()
     overlay.classList.replace("d-block", "d-none")
     editModal.classList.replace("d-block", "d-none")
+});
 
-})
+
+
+
+
 
 
 
