@@ -96,7 +96,8 @@
             "model": "Xiaomi Mi Note 2",
             "operatingSystem": "Android 6.0, MIUI 8.2",
             "year": 2016,
-            "price": 2327
+            "price": 2327,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 12,
@@ -104,7 +105,8 @@
             "model": "BLU Studio G LTE",
             "operatingSystem": "Android 5.1",
             "year": 2015,
-            "price": 1190
+            "price": 1190,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 13,
@@ -112,7 +114,8 @@
             "model": "Yezz Art 1 Pro",
             "operatingSystem": "Android 10",
             "year": 2020,
-            "price": 2294
+            "price": 2294,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 14,
@@ -120,7 +123,8 @@
             "model": "Celkon A407",
             "operatingSystem": "Android 4.2.2",
             "year": 2015,
-            "price": 1602
+            "price": 1602,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 15,
@@ -128,7 +132,8 @@
             "model": "Panasonic Eluga Note",
             "operatingSystem": "Android 6.0.1, FitHome UI",
             "year": 2016,
-            "price": 1932
+            "price": 1932,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 16,
@@ -136,7 +141,8 @@
             "model": "HP 7 Plus",
             "operatingSystem": "Android 4.2.2",
             "year": 2014,
-            "price": 1463
+            "price": 1463,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 17,
@@ -144,7 +150,8 @@
             "model": "i-mate Ultimate 5150",
             "operatingSystem": "Microsoft Windows Mobile 6.0 Professional",
             "year": 0,
-            "price": 780
+            "price": 780,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 18,
@@ -152,7 +159,8 @@
             "model": "HTC Evo 4G",
             "operatingSystem": "Android 2.1, up to 2.3, Sense UI",
             "year": 2010,
-            "price": 2971
+            "price": 2971,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 19,
@@ -160,7 +168,8 @@
             "model": "Honor 20 lite",
             "operatingSystem": "Android 9.0, EMUI 9",
             "year": 2019,
-            "price": 1030
+            "price": 1030,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 20,
@@ -168,7 +177,8 @@
             "model": "Nokia 7110",
             "operatingSystem": "Feature phone",
             "year": 0,
-            "price": 2222
+            "price": 2222,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 21,
@@ -176,7 +186,8 @@
             "model": "LG U8330",
             "operatingSystem": "Feature phone",
             "year": 2005,
-            "price": 1464
+            "price": 1464,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 22,
@@ -184,7 +195,8 @@
             "model": "Gionee Pioneer P3",
             "operatingSystem": "Android 4.2",
             "year": 2013,
-            "price": 2345
+            "price": 2345,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 23,
@@ -192,7 +204,8 @@
             "model": "Motorola DROID 4 XT894",
             "operatingSystem": "Android 2.3, up to 4.0",
             "year": 2012,
-            "price": 2157
+            "price": 2157,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 24,
@@ -200,7 +213,8 @@
             "model": "Nokia 5132 XpressMusic",
             "operatingSystem": "Feature phone",
             "year": 2010,
-            "price": 749
+            "price": 749,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 25,
@@ -208,7 +222,8 @@
             "model": "NEC e228",
             "operatingSystem": "Feature phone",
             "year": 2004,
-            "price": 544
+            "price": 544,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 26,
@@ -216,7 +231,8 @@
             "model": "Huawei U8500 IDEOS X2",
             "operatingSystem": "Android 2.1, up to 2.2",
             "year": 2010,
-            "price": 808
+            "price": 808,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 27,
@@ -224,7 +240,8 @@
             "model": "Nokia 130",
             "operatingSystem": "Feature phone",
             "year": 2014,
-            "price": 2350
+            "price": 2350,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 28,
@@ -232,7 +249,8 @@
             "model": "Tecno Spark Plus",
             "operatingSystem": "Android 7.0",
             "year": 2017,
-            "price": 2243
+            "price": 2243,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 29,
@@ -240,7 +258,8 @@
             "model": "Micromax X510 Pike",
             "operatingSystem": "Feature phone",
             "year": 2010,
-            "price": 2167
+            "price": 2167,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 30,
@@ -248,7 +267,8 @@
             "model": "ZTE Blade L5 Plus",
             "operatingSystem": "Android 5.1",
             "year": 2016,
-            "price": 1080
+            "price": 1080,
+            "image": "https://s.alicdn.com/@sc04/kf/H4109e50ac1bb4004b973e40939c3fac4G.jpg_720x720q50.jpg"
         },
         {
             "id": 31,
