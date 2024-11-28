@@ -1,5 +1,6 @@
-let loginEmail=document.querySelector("#login-email");
+let loginName=document.querySelector("#login-name");
 let loginPassword=document.querySelector("#password");
+
 
 
 

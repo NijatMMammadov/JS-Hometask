@@ -16,11 +16,11 @@ function ShowProducts(products) {
   products.forEach((product) => {
     row.innerHTML += `
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div data-id=${product.id} class="card my-3 mx-4"     style="width: 18rem;">
+          <div data-id=${product.id} class="card my-3 mx-4" style="width: 18rem;">
             <img src="${product.image}" class="card-img-top" alt="Phone">
             <div class="card-body">
               <h5 class="card-brend">${product.brand} , ${product.model}</h5>
-              <p class="card-sys"><b>Phone year</b> : ${product.year}</p>
+              <p class="card-year"><b>Phone year</b> : ${product.year}</p>
               <p class="card-text"><b>Price</b> : ${product.price}$</p>
             <div class="d-flex justify-content-end">  
                 <button class="addToFavorites btn btn-danger mx-1"><i class="fa-regular fa-heart"></i></button>
