@@ -4,7 +4,6 @@ import { GetAllData, GetDataById } from "./Api/request/requests.js";
 let row = document.querySelector(".row");
 let sort=document.querySelector("#sort");
 
-
 function GetProducts() {
   GetAllData(`${BaseURL}/products`)
     .then(res =>ShowProducts(res.data))
@@ -33,7 +32,7 @@ function ShowProducts(products) {
 
     document.querySelectorAll(".card").forEach(cardElement => {
       cardElement.addEventListener("click", (e) => {
-        window.location.href = "../detail.html" + cardElement.dataset.id
+        window.location.href = "" + cardElement.dataset.id
       })
     })
 
