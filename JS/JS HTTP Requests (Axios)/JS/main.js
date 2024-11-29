@@ -1,5 +1,5 @@
 import { BaseURL } from "./Api/BaseURL.js";
-import { GetAllSuppliers, PostSupplier, GetSupplierById } from "./Api/Requests/Suppliers.js";
+import { GetAllSuppliers, PostSupplier, GetSupplierById, UpdateAllSupplier } from "./Api/Requests/Suppliers.js";
 
 let option = document.querySelector(".option");
 
@@ -40,8 +40,8 @@ function ShowSuppliers(data) {
                 </div>
                 <span class="span-btn">
                     <button class="btn btn-details">Details</button>
-                    <button class="btn btn-edit" data-id=${element.id}>Edit</button>
-                    <button class="btn btn-delete" data-id=${element.id}>Delete</button> 
+                    <button class="btn btn-edit" data-id="${element.id}">Edit</button>
+                    <button class="btn btn-delete" data-id"="${element.id}">Delete</button> 
                 </span>
                 
             </div>
@@ -50,7 +50,7 @@ function ShowSuppliers(data) {
         let btnsEdit = document.querySelectorAll(".btn-edit")
         btnsEdit.forEach(btnEdit => {
             btnEdit.addEventListener("click", () => {
-                let id = btnEdit.getAttribute("data-id")
+                let id = btnEdit.getAttribute("data-id");
                 EditSupplier(id)
             })
         })
@@ -75,14 +75,16 @@ addForm.addEventListener("submit", (e) => {
 
 
 function EditSupplier(id) {
+
+
     GetSupplierById(BaseURL, id)
         .then(res => {
 
             overlay.classList.replace("d-none", "d-block")
             editModal.classList.replace("d-none", "d-block")
 
-            editName.value = res.data.name,
-                editDescription.value = res.data.description
+            editName.value = res.data.name;
+            editDescription.value = res.data.description;
 
             editForm.addEventListener("submit", (e) => {
                 e.preventDefault()
@@ -90,7 +92,11 @@ function EditSupplier(id) {
                     name: editName.value,
                     description: editDescription.value
                 }
-                console.log(updateingdata);
+                UpdateAllSupplier(BaseURL, id, updateingdata).then(res => {
+                    overlay.classList.replace("d-block", "d-none");
+                    editModal.classList.replace("d-block", "d-none");
+                    GetData();
+                })
             })
         })
 

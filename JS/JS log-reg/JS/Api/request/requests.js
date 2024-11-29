@@ -17,7 +17,7 @@ export async function GetDataById(url, id) {
     let data
     let error
 
-    await axios.get(`${url} / ${id}`)
+    await axios.get(`${url}/${id}`)
         .then(res => data = res.data)
         .catch(err => error = err)
 

@@ -22,6 +22,10 @@ resgisterForm.addEventListener("submit", (e) => {
 
 
     PostData(`${BaseURL}/users`, postdata)
+    .then((res)=>{
+        alert("User successfully created!");
+        window.location = "./login.html"
+    })
 
 })
 

@@ -32,7 +32,7 @@ function ShowProducts(products) {
 
     document.querySelectorAll(".card").forEach(cardElement => {
       cardElement.addEventListener("click", (e) => {
-        window.location.href = "" + cardElement.dataset.id
+        window.location.href = "./detail.html?id=" + cardElement.dataset.id
       })
     })
 

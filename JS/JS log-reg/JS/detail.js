@@ -1,17 +1,19 @@
 import BaseURL from "./Api/BaseURL.js";
 import {GetDataById } from "./Api/request/requests.js";
+let id = new URLSearchParams(window.location.search).get("id");
+
 
 let row = document.querySelector(".row");
 
 function GetPhone() {
-    GetDataById(`${BaseURL}/products/${id}`)
+    GetDataById(`${BaseURL}/products/` ,id)
         .then(res => ShowPhones(res.data))
 }
 
 GetPhone()
 
-function ShowPhones(phones){
-    phones.forEach(({image,model,brand,year,price,operatingSystem}) => {
+function ShowPhones({image, brand, model, year, price, operatingSystem}) {
+    // phones.forEach(({image,model,brand,year,price,operatingSystem}) => {
         row.innerHTML+=`
             <div class="col-6">.
                 <img src="${image}" alt="">
@@ -25,5 +27,6 @@ function ShowPhones(phones){
                 </div>
             </div>
         `
-    });
+    // }
+// );
 }

@@ -26,13 +26,18 @@ export async function PostSupplier(url, newsupp) {
 }
 
 export async function GetSupplierById(url, id) {
+
+    // console.log(url,id);
+    
     let data
     let error
 
-    await axios.get(`${url}/ ${id}`)
+    await axios.get(`${url}/${id}`)
         .then(res => data = res.data)
         .catch(err => error = err)
 
+        console.log(data);
+        
     return {
         data,
         error
@@ -42,7 +47,7 @@ export async function GetSupplierById(url, id) {
 export async function UpdateAllSupplier(url, id, updatedata) {
     let data
     let error
-    await axios.put(`${url}/ ${id}`, updatedata)
+    await axios.put(`${url}/${id}`, updatedata)
         .then(res => data = res.data)
         .catch(res => error = res.err)
 
