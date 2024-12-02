@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color:rgb(249, 242, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login{
+    background-color: white;
+    width: 400px;
+    padding: 20px 20px;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image>img{
+    width: 40px;
+}
+
+.log-button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-login{
+    width: 100%;
+}
+
+
+
+
+
+/*---------REG----------*/
+
+.register{
+    background-color: white;
+    width: 400px;
+    padding: 20px 20px;
+}
+
+
+.reg-button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-register{
+    width: 100%;
+}
+
+
+/*------com-login--------*/
+
+.com-login{
+    background-color: white;
+    width: 400px;
+    padding: 20px 20px;
+}
+
+
+.com-login-button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-com-login{
+    width: 100%;
+}
+
+
+
+
+/*------com-register--------*/
+
+.com-register{
+    background-color: white;
+    width: 400px;
+    padding: 20px 20px;
+}
+
+
+.com-reg-button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-reg-login{
+    width: 100%;
+}
+
+
+
