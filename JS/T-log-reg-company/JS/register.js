@@ -10,9 +10,6 @@ let regButton=document.querySelector(".btn-register");
 
 
 
-
-
-
 let newusers={
     name:regName.value,
     email:regEmail.value,
