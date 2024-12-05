@@ -1,0 +1,13 @@
+{
+    "users": [
+        {
+            "name": "Sydnee Matthews",
+            "surname": "Raymond",
+            "email": "mece@mailinator.com",
+            "password": "Pa$$w0rd!",
+            "isAdmin": false,
+            "favorites": [],
+            "id": 1
+        }
+    ]
+}

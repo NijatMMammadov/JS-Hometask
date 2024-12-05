@@ -8,51 +8,6 @@
       "isAdmin": false,
       "favorites": [],
       "id": 1
-    },
-    {
-      "name": "Paul Pate",
-      "surname": "Schroeder",
-      "email": "giviriqy@mailinator.com",
-      "password": "123456",
-      "isAdmin": false,
-      "favorites": [],
-      "id": 2
-    },
-    {
-      "name": "",
-      "surname": "",
-      "email": "",
-      "password": "",
-      "isAdmin": false,
-      "favorites": [],
-      "id": 3
-    },
-    {
-      "name": "",
-      "surname": "",
-      "email": "",
-      "password": "",
-      "isAdmin": false,
-      "favorites": [],
-      "id": 4
-    },
-    {
-      "name": "Casey Baldwin",
-      "surname": "Morrow",
-      "email": "kepano@mailinator.com",
-      "password": "Pa$$w0rd!",
-      "isAdmin": false,
-      "favorites": [],
-      "id": 5
-    },
-    {
-      "name": "Dorian Leblanc",
-      "surname": "Mcguire",
-      "email": "volyfanihy@mailinator.com",
-      "password": "Pa$$w0rd!",
-      "isAdmin": false,
-      "favorites": [],
-      "id": 6
     }
   ],
   "products": [

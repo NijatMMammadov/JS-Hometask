@@ -3,13 +3,26 @@ import { GetAllData, GetDataById } from "./Api/request/requests.js";
 
 let row = document.querySelector(".row");
 let sort=document.querySelector("#sort");
+let allPhone;
 
 function GetProducts() {
   GetAllData(`${BaseURL}/products`)
-    .then(res =>ShowProducts(res.data))
+    .then((res) =>{
+      allPhone=res.data
+      ShowProducts(allPhone)
+      console.log(allPhone);
+      
+    })
+    console.log(allPhone);
+    
 }
+console.log(allPhone);
+
+
 
 GetProducts()
+console.log(allPhone);
+
 
 function ShowProducts(products) {
   products.forEach((product) => {
@@ -35,18 +48,16 @@ function ShowProducts(products) {
         window.location.href = "./detail.html?id=" + cardElement.dataset.id
       })
     })
-
-
   });
 }
-
 
 // sort.addEventListener("input",(e)=>{
 //   let sortedData;
 
 //   switch (e.target.value) {
-//     case value:
-//       sortedData=
+//     case value: name
+//       console.log(allPhone);
+      
 //       break;
   
 //     default:
@@ -55,5 +66,4 @@ function ShowProducts(products) {
 
 // })
 
-
-
+console.log(allPhone);
